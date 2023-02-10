@@ -11,51 +11,45 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        //inside the page
-        appBar: AppBar(
-          title: Text("welcome to the app"),
-          centerTitle: true,
-          backgroundColor: Colors.purple,
-        ),
-        body: Column(
-         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-         children: <Widget> [
-          Row(
-            children: [
-              SizedBox(
-                child: Container(
-                  padding: EdgeInsets.all(20.0),
-                  color: Colors.amber,
-                  child: Text("i am"),
-                ),
-              ),
-            ],
+      //inside the page
+      appBar: AppBar(
+        title: Text("welcome to the app"),
+        centerTitle: true,
+        backgroundColor: Colors.blue,
+      ),
+      body: Row(                    //customize rows and columns
+        children: <Widget>[ 
+         Expanded(child: Image.asset("assets/glass.jpg"),
+         flex: 1,
+         ),     //use code actions for more movements
+          Expanded(
+            flex: 1,
+            child: Container(
+              padding: EdgeInsets.all(30.0),
+              color: Colors.cyan,
+              child: Text("saaaaaaaaaa"),
+            ),
           ),
-          Row(
-            children: [
-              SizedBox(
-                child: Container(
-                  padding: EdgeInsets.all(30.0),
-                  color: Colors.blueAccent,
-                  child: Text("the"),
-                ),
-              ),
-            ],
+          Expanded(
+            flex: 1,
+            child: Container(
+              padding: EdgeInsets.all(30.0),
+              color: Colors.purpleAccent,
+              child: Text("reeeeeeeeeee"),
+            ),
           ),
-          Row(
-            children: [
-              SizedBox(
-                child: Container(
-                  padding: EdgeInsets.all(40.0),
-                  color: Colors.pinkAccent,
-                  child: Text("penguin"),
-                ),
-              ),
-            ],
+          Expanded(
+            flex: 1,
+            child: Container(
+              padding: EdgeInsets.all(30.0),
+              color: Colors.amber,
+              child: Text("gaaaaaaaaaaaa"),
+            ),
           ),
-         ],
-        ),
-        );
+        ],
+      ),
+    );
+
     floatingActionButton:
     FloatingActionButton(
       onPressed: () {},
