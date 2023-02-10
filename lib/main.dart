@@ -15,25 +15,46 @@ class Home extends StatelessWidget {
         appBar: AppBar(
           title: Text("welcome to the app"),
           centerTitle: true,
-          backgroundColor: Colors.blue,
+          backgroundColor: Colors.purple,
         ),
-        body: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: <Widget>[
-          Text("Hello world"),
-          FloatingActionButton(
-            onPressed: () {},
-            focusColor: Colors.amber,
-            child: Text("amer"),
+        body: Column(
+         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+         children: <Widget> [
+          Row(
+            children: [
+              SizedBox(
+                child: Container(
+                  padding: EdgeInsets.all(20.0),
+                  color: Colors.amber,
+                  child: Text("i am"),
+                ),
+              ),
+            ],
           ),
-          Container(
-            color: Colors.cyan,
-            padding: EdgeInsets.all(30.0),
-            child: Text("cyan"),
+          Row(
+            children: [
+              SizedBox(
+                child: Container(
+                  padding: EdgeInsets.all(30.0),
+                  color: Colors.blueAccent,
+                  child: Text("the"),
+                ),
+              ),
+            ],
           ),
-        ]
-        )
+          Row(
+            children: [
+              SizedBox(
+                child: Container(
+                  padding: EdgeInsets.all(40.0),
+                  color: Colors.pinkAccent,
+                  child: Text("penguin"),
+                ),
+              ),
+            ],
+          ),
+         ],
+        ),
         );
     floatingActionButton:
     FloatingActionButton(
